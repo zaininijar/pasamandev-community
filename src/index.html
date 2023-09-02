@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/tailwindcss.css" rel="stylesheet" />
+    <title>Pasaman Dev Comunity | Home</title>
+  </head>
+  <body class="nuito-sans">
+    <header>
+      <nav
+        class="relative px-5 lg:px-[120px] py-3 flex justify-between items-center bg-white"
+      >
+        <a class="text-3xl font-bold leading-none w-[180px] h-[75px]" href="#">
+          <img
+            class="object-cover object-center"
+            src="../images/logo-pasamandev.png"
+            alt=""
+          />
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-[#378375] p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
+          <li>
+            <a class="__navlink-text-active" href="#">Home</a>
+          </li>
+          <li>
+            <a class="__navlink-text" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="__navlink-text" href="#">Our Gallery</a>
+          </li>
+          <li>
+            <a class="__navlink-text" href="#">Services</a>
+          </li>
+          <li>
+            <a class="__navlink-text" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <img src="../images/logo-pasamandev.png" alt="" />
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1 uppercase">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
+                  href="#"
+                  >our galery</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
+                  href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2021</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="">
+      <section
+        id="home"
+        class="py-36 px-5 lg:px-[120px] bg-[url(../images/home-bg.png)] bg-cover bg-no-repeat bg-center"
+      >
+        <div class="flex">
+          <div class="w-[60%]">
+            <h3
+              class="text-[14px] font-semibold leading-4 uppercase tracking-[3px] text-[#0B2238]"
+            >
+              PasamanDev
+            </h3>
+            <h1
+              class="text-[64px] font-extrabold leading-[72px] tracking-[-1px] text-[#222] mt-7 whitespace-nowrap"
+            >
+              Pasaman Developer <br />
+              Community
+            </h1>
+            <p
+              class="text-[18px] font-normal leading-7 text-[#475766] mt-5 w-2/3"
+            >
+              PasamanDev merupakan komunitas IT yang membantu meningkatkan dan
+              memanfaatkan potensi pegiat Teknologi khususnya di Pasaman dalam
+              bidang Teknologi.
+            </p>
+            <div class="my-10">
+              <a
+                class="px-24 py-4 bg-[#378375] text-white rounded-[10px] w-auto"
+                href="#"
+                >Bergabung Dengan Kami</a
+              >
+            </div>
+            <div class="flex gap-12">
+              <div>
+                <p class="text-[#4F4F4F] text-[16px] leading-6 tracking-tight">
+                  Tahun Berdiri
+                </p>
+                <h3 class="text-[#3C387F] text-2xl font-extrabold leading-9">
+                  2019
+                </h3>
+              </div>
+              <div class="w-[1px] bg-[#DADADA] h-[50px] text-white">.</div>
+              <div>
+                <p class="text-[#4F4F4F]">Jumlah Anggota</p>
+                <h3 class="text-[#3C387F] text-2xl font-extrabold leading-9">
+                  100+
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="about-us"
+        class="px-5 lg:px-[120px] bg-[#F8F8F8] pt-[80px] pb-[250px] relative"
+      >
+        <svg
+          class="absolute left-[33px] bottom-[237px]"
+          xmlns="http://www.w3.org/2000/svg"
+          width="182"
+          height="172"
+          viewBox="0 0 182 172"
+          fill="none"
+        >
+          <path
+            d="M131.944 2.64641C128.349 1.60812 124.631 0.860303 120.818 0.429837C120.76 0.975721 120.273 1.37384 119.726 1.32023C117.564 1.10841 115.371 0.999982 113.153 0.999982C110.935 0.999982 108.743 1.10841 106.581 1.32023C106.034 1.37384 105.546 0.97572 105.489 0.429837C101.675 0.860302 97.9576 1.60812 94.3623 2.6464C94.5185 3.17254 94.2212 3.72711 93.6953 3.88749C89.461 5.17897 85.4042 6.88111 81.5711 8.94789C81.0871 9.20883 80.4838 9.03002 80.2198 8.54878C76.9032 10.4009 73.7572 12.5241 70.8115 14.8886C71.1584 15.3141 71.0973 15.9404 70.6737 16.2908C67.2921 19.0876 64.1886 22.2116 61.4113 25.6144C61.0636 26.0404 60.4376 26.1055 60.0099 25.7614C57.6662 28.7201 55.5623 31.8789 53.7277 35.2082C54.2104 35.4696 54.3925 36.0719 54.1343 36.5573C52.0899 40.3996 50.4066 44.4648 49.1298 48.7071C48.9713 49.2336 48.4179 49.533 47.8911 49.3786C46.8658 52.9765 46.1275 56.6962 45.7025 60.511C46.2485 60.5678 46.6473 61.0546 46.5944 61.6019C46.3853 63.7647 46.2783 65.9577 46.2783 68.1761C46.2783 70.3946 46.3853 72.5876 46.5944 74.7504C46.6473 75.2977 46.2485 75.7845 45.7025 75.8412C46.1275 79.6561 46.8658 83.3757 47.8911 86.9737C48.4178 86.8193 48.9713 87.1187 49.1298 87.6452C50.4066 91.8875 52.0899 95.9526 54.1343 99.795C54.3925 100.28 54.2104 100.883 53.7277 101.144C55.5623 104.473 57.6662 107.632 60.0099 110.591C60.4376 110.247 61.0636 110.312 61.4113 110.738C64.1886 114.141 67.2921 117.265 70.6736 120.061C71.0973 120.412 71.1583 121.038 70.8115 121.464C73.7572 123.828 76.9032 125.951 80.2198 127.803C80.4838 127.322 81.0871 127.143 81.5711 127.404C85.4042 129.471 89.4609 131.173 93.6953 132.465C94.2212 132.625 94.5185 133.18 94.3622 133.706C97.9576 134.744 101.675 135.492 105.489 135.922C105.546 135.377 106.034 134.978 106.581 135.032C108.743 135.244 110.935 135.352 113.153 135.352C115.371 135.352 117.564 135.244 119.726 135.032C120.273 134.978 120.76 135.377 120.818 135.922C124.631 135.492 128.349 134.744 131.944 133.706C131.788 133.18 132.085 132.625 132.611 132.465C136.846 131.173 140.902 129.471 144.736 127.404C145.219 127.143 145.823 127.322 146.087 127.803C149.403 125.951 152.549 123.828 155.495 121.464C155.148 121.038 155.209 120.412 155.633 120.061C159.015 117.265 162.118 114.141 164.895 110.738C165.243 110.312 165.869 110.247 166.297 110.591C168.64 107.632 170.744 104.473 172.579 101.144C172.096 100.883 171.914 100.28 172.172 99.795C174.217 95.9526 175.9 91.8875 177.177 87.6452C177.335 87.1187 177.889 86.8193 178.416 86.9737C179.441 83.3757 180.179 79.6561 180.604 75.8412C180.058 75.7845 179.659 75.2977 179.712 74.7504C179.921 72.5876 180.028 70.3946 180.028 68.1761C180.028 65.9577 179.921 63.7647 179.712 61.6019C179.659 61.0546 180.058 60.5678 180.604 60.511C180.179 56.6962 179.441 52.9765 178.416 49.3786C177.889 49.533 177.335 49.2336 177.177 48.7071C175.9 44.4648 174.217 40.3996 172.172 36.5573C171.914 36.0719 172.096 35.4696 172.579 35.2082C170.744 31.8789 168.64 28.7201 166.297 25.7614C165.869 26.1055 165.243 26.0404 164.895 25.6144C162.118 22.2116 159.015 19.0877 155.633 16.2908C155.209 15.9404 155.148 15.3141 155.495 14.8886C152.549 12.5241 149.403 10.4009 146.087 8.54878C145.823 9.03003 145.22 9.20883 144.736 8.94789C140.902 6.88112 136.846 5.17897 132.611 3.88749C132.085 3.72711 131.788 3.17256 131.944 2.64641Z"
+            stroke="#89C5CC"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="15 15"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M44.3911 97.1399C44.3911 80.4054 57.8972 66.8394 74.5578 66.8394C91.2183 66.8394 104.724 80.4054 104.724 97.1399C104.724 113.874 91.2183 127.44 74.5578 127.44C57.8972 127.44 44.3911 113.874 44.3911 97.1399ZM0.0283541 97.1399C0.0283559 55.7958 33.3963 22.2798 74.5578 22.2798C115.719 22.2798 149.087 55.7958 149.087 97.1399C149.087 138.484 115.719 172 74.5578 172C33.3963 172 0.0283523 138.484 0.0283541 97.1399Z"
+            fill="#89C5CC"
+            fill-opacity="0.5"
+          />
+        </svg>
+        <svg
+          class="absolute right-[18px] top-[284px]"
+          xmlns="http://www.w3.org/2000/svg"
+          width="181"
+          height="172"
+          viewBox="0 0 181 172"
+          fill="none"
+        >
+          <path
+            d="M49.0839 2.64641C52.6793 1.60812 56.3971 0.860303 60.2104 0.429837C60.2679 0.975721 60.7552 1.37384 61.3024 1.32023C63.4645 1.10841 65.657 0.999982 67.875 0.999982C70.093 0.999982 72.2855 1.10841 74.4475 1.32023C74.9948 1.37384 75.4821 0.97572 75.5395 0.429837C79.3529 0.860302 83.0707 1.60812 86.6661 2.6464C86.5098 3.17254 86.8071 3.72711 87.333 3.88749C91.5674 5.17897 95.6241 6.88111 99.4572 8.94789C99.9412 9.20883 100.544 9.03002 100.808 8.54878C104.125 10.4009 107.271 12.5241 110.217 14.8886C109.87 15.3141 109.931 15.9404 110.355 16.2908C113.736 19.0876 116.84 22.2116 119.617 25.6144C119.965 26.0404 120.591 26.1055 121.018 25.7614C123.362 28.7201 125.466 31.8789 127.301 35.2082C126.818 35.4696 126.636 36.0719 126.894 36.5573C128.938 40.3996 130.622 44.4648 131.899 48.7071C132.057 49.2336 132.61 49.533 133.137 49.3786C134.163 52.9765 134.901 56.6962 135.326 60.511C134.78 60.5678 134.381 61.0546 134.434 61.6019C134.643 63.7647 134.75 65.9577 134.75 68.1761C134.75 70.3946 134.643 72.5876 134.434 74.7504C134.381 75.2977 134.78 75.7845 135.326 75.8412C134.901 79.6561 134.163 83.3757 133.137 86.9737C132.61 86.8193 132.057 87.1187 131.899 87.6452C130.622 91.8875 128.938 95.9526 126.894 99.795C126.636 100.28 126.818 100.883 127.301 101.144C125.466 104.473 123.362 107.632 121.018 110.591C120.591 110.247 119.965 110.312 119.617 110.738C116.84 114.141 113.736 117.265 110.355 120.061C109.931 120.412 109.87 121.038 110.217 121.464C107.271 123.828 104.125 125.951 100.808 127.803C100.544 127.322 99.9412 127.143 99.4572 127.404C95.6241 129.471 91.5674 131.173 87.333 132.465C86.8071 132.625 86.5098 133.18 86.6661 133.706C83.0707 134.744 79.3529 135.492 75.5395 135.922C75.4821 135.377 74.9948 134.978 74.4476 135.032C72.2855 135.244 70.093 135.352 67.875 135.352C65.657 135.352 63.4645 135.244 61.3024 135.032C60.7552 134.978 60.2679 135.377 60.2105 135.922C56.3971 135.492 52.6793 134.744 49.0839 133.706C49.2402 133.18 48.9429 132.625 48.417 132.465C44.1826 131.173 40.1259 129.471 36.2928 127.404C35.8088 127.143 35.2055 127.322 34.9415 127.803C31.6248 125.951 28.4788 123.828 25.5332 121.464C25.88 121.038 25.819 120.412 25.3953 120.061C22.0138 117.265 18.9103 114.141 16.1329 110.738C15.7853 110.312 15.1593 110.247 14.7316 110.591C12.3879 107.632 10.284 104.473 8.44933 101.144C8.93206 100.883 9.11422 100.28 8.85595 99.795C6.81156 95.9526 5.12825 91.8875 3.85148 87.6452C3.69302 87.1187 3.13952 86.8193 2.61277 86.9737C1.58749 83.3757 0.849151 79.6561 0.424213 75.8412C0.970225 75.7845 1.36902 75.2977 1.3161 74.7504C1.10702 72.5876 0.999997 70.3946 0.999997 68.1761C0.999997 65.9577 1.10702 63.7647 1.3161 61.6019C1.36902 61.0546 0.970224 60.5678 0.424212 60.511C0.84915 56.6962 1.58749 52.9765 2.61277 49.3786C3.13952 49.533 3.69302 49.2336 3.85147 48.7071C5.12825 44.4648 6.81156 40.3996 8.85595 36.5573C9.11422 36.0719 8.93206 35.4696 8.44933 35.2082C10.284 31.8789 12.3879 28.7201 14.7316 25.7614C15.1593 26.1055 15.7853 26.0404 16.1329 25.6144C18.9103 22.2116 22.0138 19.0877 25.3953 16.2908C25.819 15.9404 25.88 15.3141 25.5332 14.8886C28.4788 12.5241 31.6248 10.4009 34.9415 8.54878C35.2055 9.03003 35.8088 9.20883 36.2928 8.94789C40.1259 6.88112 44.1826 5.17897 48.417 3.88749C48.9429 3.72711 49.2402 3.17256 49.0839 2.64641Z"
+            stroke="#FB7E5C"
+            stroke-opacity="0.4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="15 15"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M136.637 97.1399C136.637 80.4054 123.131 66.8394 106.471 66.8394C89.8102 66.8394 76.3041 80.4054 76.3041 97.1399C76.3041 113.874 89.8102 127.44 106.471 127.44C123.131 127.44 136.637 113.874 136.637 97.1399ZM181 97.1399C181 55.7958 147.632 22.2798 106.471 22.2798C65.3094 22.2798 31.9414 55.7958 31.9414 97.1399C31.9414 138.484 65.3094 172 106.471 172C147.632 172 181 138.484 181 97.1399Z"
+            fill="#FB7E5C"
+            fill-opacity="0.4"
+          />
+        </svg>
+        <h2
+          class="text-[#378375] text-[24px] leading-8 p-[10px] border-b border-[#378375] text-center max-w-max font-extrabold mx-auto"
+        >
+          Tentang Kami
+        </h2>
+        <div class="flex mt-32">
+          <div class="w-1/2 flex items-center">
+            <img
+              class="object-contain object-center w-[500px]"
+              src="../images/illutration-1.png"
+              alt=""
+            />
+          </div>
+          <div class="w-1/2">
+            <h3
+              class="text-[14px] font-semibold leading-4 py-[18px] uppercase tracking-[3px] text-[#0B2238] relative"
+            >
+              PasamanDev
+              <div
+                class="bg-[#FAE0B2] text-transparent w-[41.202px] h-[4px] absolute bottom-0"
+              >
+                .
+              </div>
+            </h3>
+            <h1
+              class="text-[42px] font-extrabold leading-[48px] tracking-[-1px] text-[#0B2238] mt-[57px]"
+            >
+              Learn, Share & Make Impact
+            </h1>
+            <p class="text-[18px] font-normal leading-7 text-[#475766] mt-8">
+              Merupakan komunitas yang bergerak dalam bidang Teknologi Informasi
+              berpusat di pasaman. Kami berusaha menghadirkan product digital
+              yang dibutuhkan masyarakat. Dan juga menjadi tempat berkumpulnya
+              para pegiat IT yang ingin mengembangkan sebuah produk digital,
+              belajar dan meningkatkan skill dalam bidang teknologi informasi.
+            </p>
+            <div class="mt-14 flex">
+              <a
+                class="px-[30px] py-[15px] bg-[#378375] text-white rounded-[10px] justify-center flex gap-[18px]"
+                href="#"
+              >
+                <span>Bergabung Dengan Kami</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M15.9566 8.94521L16.3619 8.54175L20.9942 13.1528L20.5889 13.562L15.9566 8.94521ZM15.9566 17.3604L20.5889 12.7493L21 13.1586L16.3677 17.7696L15.9566 17.3604Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20.6873 12.9223H1V13.5076H20.6873V12.9223Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.9566 8.94521L16.3619 8.54175L20.9942 13.1528L20.5889 13.562L15.9566 8.94521ZM15.9566 17.3604L20.5889 12.7493L21 13.1586L16.3677 17.7696L15.9566 17.3604Z"
+                    stroke="white"
+                  />
+                  <path
+                    d="M20.6873 12.9223H1V13.5076H20.6873V12.9223Z"
+                    stroke="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="layanan"
+        class="py-36 px-5 lg:px-[120px] bg-[url(../images/services-bg.png)] bg-contain bg-no-repeat bg-center"
+      >
+        <h2
+          class="text-[#378375] text-[24px] leading-8 p-[10px] border-b border-[#378375] text-center max-w-max font-extrabold mx-auto"
+        >
+          Layanan
+        </h2>
+        <div class="flex mt-[81px] gap-[10%]">
+          <div class="__card-service">
+            <img src="../images/Scene Whiteboard.svg" alt="" />
+            <div class="flex mb-8">
+              <h2
+                class="text-[24px] border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px]"
+              >
+                Development
+              </h2>
+            </div>
+            <p class="text-[16px] mb-[20px]">
+              Membuat suatu sisitem berupa produk digital yang bermanfaat dan
+              memudahkan pekerjaan dari yang sistem konvensional menjadi sistem
+              digital
+            </p>
+            <a
+              href=""
+              class="text-[16px] leading-[24px] text-[#378375] tracking-[0.1px] flex gap-[18px] items-center"
+              ><span>Learn More</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="18"
+                  viewBox="0 0 35 18"
+                  fill="none"
+                >
+                  <path
+                    d="M25.6503 1.50065L26.3392 0.785156L34.2118 8.96219L33.523 9.6879L25.6503 1.50065ZM25.6503 16.4237L33.523 8.2467L34.2217 8.97241L26.349 17.1494L25.6503 16.4237Z"
+                    fill="#378375"
+                  />
+                  <path
+                    d="M33.6902 8.55339H0.231445V9.59145H33.6902V8.55339Z"
+                    fill="#378375"
+                  />
+                </svg> </span
+            ></a>
+          </div>
+          <div class="__card-service">
+            <img src="../images/Scene Whiteboard.svg" alt="" />
+            <div class="flex mb-8">
+              <h2
+                class="text-[24px] border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px]"
+              >
+                Development
+              </h2>
+            </div>
+            <p class="text-[16px] mb-[20px]">
+              Membuat suatu sisitem berupa produk digital yang bermanfaat dan
+              memudahkan pekerjaan dari yang sistem konvensional menjadi sistem
+              digital
+            </p>
+            <a
+              href=""
+              class="text-[16px] leading-[24px] text-[#378375] tracking-[0.1px] flex gap-[18px] items-center"
+              ><span>Learn More</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="18"
+                  viewBox="0 0 35 18"
+                  fill="none"
+                >
+                  <path
+                    d="M25.6503 1.50065L26.3392 0.785156L34.2118 8.96219L33.523 9.6879L25.6503 1.50065ZM25.6503 16.4237L33.523 8.2467L34.2217 8.97241L26.349 17.1494L25.6503 16.4237Z"
+                    fill="#378375"
+                  />
+                  <path
+                    d="M33.6902 8.55339H0.231445V9.59145H33.6902V8.55339Z"
+                    fill="#378375"
+                  />
+                </svg> </span
+            ></a>
+          </div>
+          <div class="__card-service">
+            <img src="../images/Scene Whiteboard.svg" alt="" />
+            <div class="flex mb-8">
+              <h2
+                class="text-[24px] border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px]"
+              >
+                Development
+              </h2>
+            </div>
+            <p class="text-[16px] mb-[20px]">
+              Membuat suatu sisitem berupa produk digital yang bermanfaat dan
+              memudahkan pekerjaan dari yang sistem konvensional menjadi sistem
+              digital
+            </p>
+            <a
+              href=""
+              class="text-[16px] leading-[24px] text-[#378375] tracking-[0.1px] flex gap-[18px] items-center"
+              ><span>Learn More</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="18"
+                  viewBox="0 0 35 18"
+                  fill="none"
+                >
+                  <path
+                    d="M25.6503 1.50065L26.3392 0.785156L34.2118 8.96219L33.523 9.6879L25.6503 1.50065ZM25.6503 16.4237L33.523 8.2467L34.2217 8.97241L26.349 17.1494L25.6503 16.4237Z"
+                    fill="#378375"
+                  />
+                  <path
+                    d="M33.6902 8.55339H0.231445V9.59145H33.6902V8.55339Z"
+                    fill="#378375"
+                  />
+                </svg> </span
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[url(../images/footer-bg.png)] bg-cover px-5 lg:px-[120px]"
+    >
+      <div
+        class="flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
+      >
+        <div
+          class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left"
+        >
+          <a
+            class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start"
+          >
+            <img src="../images/logo-pasamandev.png" alt="" />
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Learn, Share and Make Impact</p>
+          <div class="mt-4">
+            <span
+              class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start"
+            >
+              <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M14 19H19V5H5V19H12V14H10V12H12V10.3458C12 9.00855 12.1392 8.52362 12.4007 8.03473C12.6622 7.54584 13.0458 7.16216 13.5347 6.9007C13.9174 6.69604 14.3922 6.57252 15.2217 6.51954C15.551 6.49851 15.9771 6.52533 16.5 6.6V8.5H16C15.0827 8.5 14.7042 8.54332 14.4779 8.66433C14.3376 8.73939 14.2394 8.83758 14.1643 8.97793C14.0433 9.20418 14 9.42853 14 10.3458V12H16.5L16 14H14V19ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z"
+                    fill="current"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <svg
+                  fill="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="0"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  ></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left"
+        >
+          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+            <h2
+              class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
+            >
+              Community
+            </h2>
+            <nav class="mb-10 list-none">
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >About</a
+                >
+              </li>
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Contact</a
+                >
+              </li>
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Our Team</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+            <h2
+              class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
+            >
+              Support
+            </h2>
+            <nav class="mb-10 list-none">
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Pasaman Community</a
+                >
+              </li>
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Baznas Pasaman</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+            <h2
+              class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
+            >
+              Product
+            </h2>
+            <nav class="mb-10 list-none">
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Kamari</a
+                >
+              </li>
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Karcis.id</a
+                >
+              </li>
+              <li class="mt-3">
+                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                  >Moomen</a
+                >
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
