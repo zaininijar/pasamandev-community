@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
-
-.nuito-sans {
-  font-family: "Nunito Sans", sans-serif;
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
 }
 
 @layer components {
@@ -17,5 +15,109 @@
   }
   .__card-service {
     @apply border bg-white px-[28px] py-[44px] drop-shadow-md;
+  }
+  .__form-label {
+    @apply text-[#1E0E62] text-[14px] leading-[185.714%] uppercase tracking-[2px];
+  }
+  .__form-input {
+    @apply text-[#37837599] placeholder:text-[#378375] border-2 border-[#378375] focus:border-[#37837599] outline-none text-[20px] leading-[26px] rounded-[10px] px-3 py-4;
+  }
+  .__footer-menu-title {
+    @apply text-[17px] leading-[24px] font-bold tracking-widest uppercase mb-5 text-[#666];
+  }
+  .__card-service-title {
+    @apply text-[24px] font-extrabold border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px];
+  }
+  .__main-navbar {
+    @apply fixed top-0 z-40 w-full backdrop-blur flex-none transition-all duration-300 right-0 left-0 px-5 lg:px-[120px] py-3 flex justify-between items-center bg-white;
+  }
+  .__main-navbar-scroll {
+    @apply py-1 transition-all duration-500;
+  }
+}
+
+.__main-navbar-scroll-gradient {
+  background: rgb(248, 149, 87);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 177, 130, 0.205) 0%,
+    rgba(253, 240, 231, 0.342) 20%,
+    rgba(255, 255, 255, 0.274) 80%,
+    rgba(140, 253, 230, 0.315) 100%
+  );
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1803a80;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1803a;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }

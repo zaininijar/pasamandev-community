@@ -35,3 +35,43 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+const navbar = document.querySelector(".__main-navbar");
+function navbarScrollInit() {
+  if (window.scrollY > 1) {
+    navbar.classList.add("__main-navbar-scroll");
+    navbar.classList.add("__main-navbar-scroll-gradient");
+  } else {
+    navbar.classList.remove("__main-navbar-scroll");
+    navbar.classList.remove("__main-navbar-scroll-gradient");
+  }
+}
+
+document.addEventListener("scroll", () => {
+  navbarScrollInit();
+});
+
+function scrollToElement(elementId) {
+  var elem = document.getElementById(elementId);
+  if (elem) {
+    var elemRect = elem.getBoundingClientRect();
+    var scrollYValue = window.scrollY + elemRect.top - 100;
+
+    if (elementId == "services") {
+      scrollYValue = scrollYValue + 90;
+    } else if (elementId == "contact") {
+      scrollYValue = scrollYValue + 70;
+    }
+
+    window.scrollTo({
+      top: scrollYValue,
+    });
+  }
+}
+
+function initLoader() {
+  var spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(spinner.remove(), 3000);
+  }
+}

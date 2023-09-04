@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/tailwindcss.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Pasaman Dev Comunity | Home</title>
   </head>
-  <body class="nuito-sans">
+  <body class="dm-sans" onload="initLoader()">
+    <div
+      id="spinner"
+      class="bg-[#378375] z-[99] fixed inset-0 flex items-center justify-center"
+    >
+      <div class="spinner">
+        <div class="bg-white double-bounce1"></div>
+        <div class="bg-white double-bounce2"></div>
+      </div>
+    </div>
     <header>
-      <nav
-        class="relative px-5 lg:px-[120px] py-3 flex justify-between items-center bg-white"
-      >
+      <nav class="__main-navbar">
         <a class="text-3xl font-bold leading-none w-[180px] h-[75px]" href="#">
           <img
             class="object-cover object-center"
@@ -32,19 +45,49 @@
         </div>
         <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
           <li>
-            <a class="__navlink-text-active" href="#">Home</a>
+            <button
+              type="button"
+              class="__navlink-text-active"
+              onclick="scrollToElement('home')"
+            >
+              Home
+            </button>
           </li>
           <li>
-            <a class="__navlink-text" href="#">About Us</a>
+            <button
+              type="button"
+              class="__navlink-text"
+              onclick="scrollToElement('about-us')"
+            >
+              About Us
+            </button>
           </li>
           <li>
-            <a class="__navlink-text" href="#">Our Gallery</a>
+            <button
+              type="button"
+              class="__navlink-text"
+              onclick="scrollToElement('our-gallery')"
+            >
+              Our Gallery
+            </button>
           </li>
           <li>
-            <a class="__navlink-text" href="#">Services</a>
+            <button
+              type="button"
+              class="__navlink-text"
+              onclick="scrollToElement('services')"
+            >
+              Services
+            </button>
           </li>
           <li>
-            <a class="__navlink-text" href="#">Contact</a>
+            <button
+              type="button"
+              class="__navlink-text"
+              onclick="scrollToElement('contact')"
+            >
+              Contact
+            </button>
           </li>
         </ul>
       </nav>
@@ -79,35 +122,35 @@
               <li class="mb-1 uppercase">
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
-                  href="#"
+                  onclick="scrollToElement('home')"
                   >Home</a
                 >
               </li>
               <li class="mb-1">
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
-                  href="#"
+                  onclick="scrollToElement('about-us')"
                   >About Us</a
                 >
               </li>
               <li class="mb-1">
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
-                  href="#"
+                  onclick="scrollToElement('our-gallery')"
                   >our galery</a
                 >
               </li>
               <li class="mb-1">
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
-                  href="#"
+                  onclick="scrollToElement('services')"
                   >Services</a
                 >
               </li>
               <li class="mb-1">
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-[#378375] rounded uppercase"
-                  href="#"
+                  onclick="scrollToElement('contact')"
                   >Contact</a
                 >
               </li>
@@ -121,7 +164,7 @@
         </nav>
       </div>
     </header>
-    <main class="">
+    <main class="mt-24">
       <section
         id="home"
         class="py-36 px-5 lg:px-[120px] bg-[url(../images/home-bg.png)] bg-cover bg-no-repeat bg-center"
@@ -232,7 +275,7 @@
         >
           Tentang Kami
         </h2>
-        <div class="flex mt-32">
+        <div class="flex mt-32 gap-10">
           <div class="w-1/2 flex items-center">
             <img
               class="object-contain object-center w-[500px]"
@@ -299,7 +342,7 @@
         </div>
       </section>
       <section
-        id="layanan"
+        id="services"
         class="py-36 px-5 lg:px-[120px] bg-[url(../images/services-bg.png)] bg-contain bg-no-repeat bg-center"
       >
         <h2
@@ -309,13 +352,9 @@
         </h2>
         <div class="flex mt-[81px] gap-[10%]">
           <div class="__card-service">
-            <img src="../images/Scene Whiteboard.svg" alt="" />
-            <div class="flex mb-8">
-              <h2
-                class="text-[24px] border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px]"
-              >
-                Development
-              </h2>
+            <img class="mx-auto" src="../images/Scene Whiteboard.svg" alt="" />
+            <div class="flex mb-8 mt-12">
+              <h2 class="__card-service-title">Development</h2>
             </div>
             <p class="text-[16px] mb-[20px]">
               Membuat suatu sisitem berupa produk digital yang bermanfaat dan
@@ -346,18 +385,12 @@
             ></a>
           </div>
           <div class="__card-service">
-            <img src="../images/Scene Whiteboard.svg" alt="" />
             <div class="flex mb-8">
-              <h2
-                class="text-[24px] border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px]"
-              >
-                Development
-              </h2>
+              <h2 class="__card-service-title">Research</h2>
             </div>
             <p class="text-[16px] mb-[20px]">
-              Membuat suatu sisitem berupa produk digital yang bermanfaat dan
-              memudahkan pekerjaan dari yang sistem konvensional menjadi sistem
-              digital
+              Melakukan studi dan analisa kebutuhan produk teknologi informasi
+              yang berada di wilayah Sumatera barat, khususnya pasaman
             </p>
             <a
               href=""
@@ -381,20 +414,24 @@
                   />
                 </svg> </span
             ></a>
+            <img
+              class="mx-auto mt-5"
+              src="../images/illustration-research.svg"
+              alt=""
+            />
           </div>
           <div class="__card-service">
-            <img src="../images/Scene Whiteboard.svg" alt="" />
-            <div class="flex mb-8">
-              <h2
-                class="text-[24px] border-b-[3px] border-[#378375] leading-[32px] tracking-[-0.1px]"
-              >
-                Development
-              </h2>
+            <img
+              class="mx-auto"
+              src="../images/illustration-sharing.svg"
+              alt=""
+            />
+            <div class="flex mb-8 mt-12">
+              <h2 class="__card-service-title">Sharing</h2>
             </div>
             <p class="text-[16px] mb-[20px]">
-              Membuat suatu sisitem berupa produk digital yang bermanfaat dan
-              memudahkan pekerjaan dari yang sistem konvensional menjadi sistem
-              digital
+              Diskusi dan berbagi informasi seputar perkembangan dunia IT dengan
+              berbagai macam latar belakang pendidikan dan pengalaman
             </p>
             <a
               href=""
@@ -421,154 +458,250 @@
           </div>
         </div>
       </section>
+      <section
+        id="our-gallery"
+        class="py-36 px-5 lg:px-[120px] bg-[#F8F8F8] border"
+      >
+        <h2
+          class="text-[#378375] text-[24px] leading-8 p-[10px] border-b border-[#378375] text-center max-w-max font-extrabold mx-auto"
+        >
+          Our Galery
+        </h2>
+        <div class="flex pt-36">
+          <p class="__footer-menu-title mx-auto">Cooming Soon...</p>
+        </div>
+      </section>
+      <section id="contact" class="py-36 px-5 lg:px-[120px] bg-[#F8F8F8]">
+        <h2
+          class="text-[#378375] text-[24px] leading-8 p-[10px] border-b border-[#378375] text-center max-w-max font-extrabold mx-auto"
+        >
+          Gabung Bersama Kami
+        </h2>
+        <div class="flex mt-11 gap-10">
+          <div class="w-1/2">
+            <h1
+              class="text-[42px] font-bold leading-[48px] tracking-[-0.4px] text-[#1E0E62] mt-[57px]"
+            >
+              Daftar untuk bergabung bersama komunitas
+            </h1>
+            <form
+              action=""
+              method="post"
+              class="flex flex-col gap-[35px] mt-16"
+            >
+              <div class="flex flex-col">
+                <label for="name" class="__form-label">name</label>
+                <input
+                  class="__form-input"
+                  type="text"
+                  placeholder="Masukkan Nama"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="email" class="__form-label">email</label>
+                <input
+                  class="__form-input"
+                  type="text"
+                  placeholder="Masukkan Email"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="nomor-wa" class="__form-label">nomor-wa</label>
+                <input
+                  class="__form-input"
+                  type="text"
+                  placeholder="Masukkan Nomor Wa"
+                />
+              </div>
+            </form>
+            <div class="mt-14 flex gap-5 items-center">
+              <a
+                class="w-1/2 py-[15px] bg-[#378375] text-white rounded-[10px] text-center"
+                href="#"
+              >
+                Gabung
+              </a>
+              <p class="text-[#15143966] text-[16px] font-normal w-2/3">
+                Dengan gabung kamu menyetujui syarat dan ketentuan yang berlaku
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center justify-end">
+            <img
+              class="object-contain object-center w-[521.939px]"
+              src="../images/illustration-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer
       class="bg-[url(../images/footer-bg.png)] bg-cover px-5 lg:px-[120px]"
     >
       <div
-        class="flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
+        class="flex flex-col gap-24 justify-between pt-10 pb-16 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
       >
-        <div
-          class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left"
-        >
+        <div class="mx-auto text-center md:mx-0 md:text-left">
           <a
-            class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start"
+            class="flex w-[150px] items-center justify-center font-medium text-gray-900 title-font md:justify-start"
           >
-            <img src="../images/logo-pasamandev.png" alt="" />
+            <img
+              class="object-cover object-center"
+              src="../images/logo-pasamandev.png"
+              alt=""
+            />
           </a>
-          <p class="mt-2 text-sm text-gray-500">Learn, Share and Make Impact</p>
+          <p class="mt-3 text-sm font-normal text-[#666]">
+            Learn, Share and Make Impact
+          </p>
           <div class="mt-4">
             <span
               class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start"
             >
-              <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+              <a
+                class="text-gray-500 cursor-pointer hover:text-gray-700 w-6 h-6"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
                     d="M14 19H19V5H5V19H12V14H10V12H12V10.3458C12 9.00855 12.1392 8.52362 12.4007 8.03473C12.6622 7.54584 13.0458 7.16216 13.5347 6.9007C13.9174 6.69604 14.3922 6.57252 15.2217 6.51954C15.551 6.49851 15.9771 6.52533 16.5 6.6V8.5H16C15.0827 8.5 14.7042 8.54332 14.4779 8.66433C14.3376 8.73939 14.2394 8.83758 14.1643 8.97793C14.0433 9.20418 14 9.42853 14 10.3458V12H16.5L16 14H14V19ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z"
-                    fill="current"
+                    fill="rgba(102,102,102,1)"
                   ></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
-                <svg
-                  fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
+              <a
+                class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700 w-6 h-6"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
-                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                    fill="rgba(102,102,102,1)"
                   ></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <a class="ml-3 cursor-pointer hover:text-gray-700 w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
-                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                    d="M15.3499 5.5498C13.7681 5.5498 12.4786 6.81785 12.4504 8.39633L12.4223 9.97138C12.4164 10.3027 12.143 10.5665 11.8117 10.5606C11.7881 10.5602 11.7646 10.5584 11.7413 10.5552L10.1805 10.3423C8.12699 10.0623 6.15883 9.11711 4.27072 7.54387C3.67275 10.8535 4.84 13.147 7.65342 14.9157L9.40041 16.014C9.68095 16.1904 9.7654 16.5608 9.58903 16.8413C9.54861 16.9056 9.49636 16.9616 9.43504 17.0064L7.84338 18.1693C8.78973 18.2288 9.68938 18.1873 10.435 18.0385C15.1526 17.097 18.2897 13.5468 18.2897 7.69084C18.2897 7.21275 17.2774 5.5498 15.3499 5.5498ZM10.4507 8.36066C10.4983 5.69559 12.6735 3.5498 15.3499 3.5498C16.7132 3.5498 17.9465 4.10658 18.8348 5.00515C19.5462 4.9998 20.1514 5.17966 21.5035 4.35943C21.1693 5.9998 21.0034 6.71177 20.2897 7.69084C20.2897 15.3324 15.5926 19.0487 10.8264 19.9998C7.5587 20.6519 2.80646 19.5812 1.44531 18.1584C2.13874 18.1051 4.95928 17.8018 6.58895 16.6089C5.20994 15.6984 -0.278631 12.4679 3.32772 3.78617C5.02119 5.76283 6.73797 7.10831 8.47807 7.82262C9.63548 8.29774 9.91978 8.28825 10.4507 8.36066Z"
+                    fill="rgba(102,102,102,1)"
                   ></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="none"
-                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                  ></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
                 </svg>
               </a>
             </span>
           </div>
         </div>
-        <div
-          class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left"
-        >
-          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-            <h2
-              class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
-            >
-              Community
-            </h2>
+        <div class="flex flex-nowrap gap-[60px] md:mt-0 md:text-left">
+          <div class="w-full lg:w-1/3 md:w-1/2">
+            <h2 class="__footer-menu-title">Community</h2>
             <nav class="mb-10 list-none">
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >About</a
                 >
               </li>
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Contact</a
                 >
               </li>
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Our Team</a
                 >
               </li>
             </nav>
           </div>
-          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-            <h2
-              class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
-            >
-              Support
-            </h2>
+          <div class="w-full lg:w-1/3 md:w-1/2 mx-[30px]">
+            <h2 class="__footer-menu-title">Support</h2>
             <nav class="mb-10 list-none">
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Pasaman Community</a
                 >
               </li>
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Baznas Pasaman</a
                 >
               </li>
             </nav>
           </div>
-          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-            <h2
-              class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
-            >
-              Product
-            </h2>
+          <div class="w-full lg:w-1/3 md:w-1/2">
+            <h2 class="__footer-menu-title">Product</h2>
             <nav class="mb-10 list-none">
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Kamari</a
                 >
               </li>
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Karcis.id</a
                 >
               </li>
               <li class="mt-3">
-                <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                <a class="text-[#666] cursor-pointer hover:text-gray-900"
                   >Moomen</a
                 >
               </li>
             </nav>
           </div>
+        </div>
+        <div class="text-[#666666] max-w-[416px]">
+          <h3 class="__footer-menu-title">Our Office</h3>
+          <ul class="flex flex-col gap-5">
+            <li class="flex gap-5 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="19"
+                viewBox="0 0 23 19"
+                fill="none"
+              >
+                <path
+                  d="M20.4582 16.4062H22.4605V18.4062H0.435059V16.4062H2.43737V1.40625C2.43737 1.14103 2.54285 0.88668 2.7306 0.699143C2.91836 0.511607 3.17301 0.40625 3.43853 0.40625H13.4501C13.7156 0.40625 13.9703 0.511607 14.158 0.699143C14.3458 0.88668 14.4513 1.14103 14.4513 1.40625V16.4062H18.4559V8.40625H16.4536V6.40625H19.457C19.7226 6.40625 19.9772 6.51161 20.165 6.69914C20.3527 6.88668 20.4582 7.14103 20.4582 7.40625V16.4062ZM4.43969 2.40625V16.4062H12.4489V2.40625H4.43969ZM6.442 8.40625H10.4466V10.4062H6.442V8.40625ZM6.442 4.40625H10.4466V6.40625H6.442V4.40625Z"
+                  fill="#666666"
+                />
+              </svg>
+              <p class="leading-[27.2px] whitespace-nowrap">
+                Terminal Benteng, Lubuk Sikaping, <br />
+                Pasaman, Sumatera Barat, ID
+              </p>
+            </li>
+            <li class="flex gap-5 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+              >
+                <path
+                  d="M10.4476 2.40625C8.32342 2.40625 6.28624 3.2491 4.78421 4.7494C3.28218 6.24969 2.43835 8.28452 2.43835 10.4062H5.44182C5.97287 10.4062 6.48217 10.617 6.85767 10.992C7.23318 11.3671 7.44414 11.8758 7.44414 12.4062V17.4062C7.44414 17.9367 7.23318 18.4454 6.85767 18.8205C6.48217 19.1955 5.97287 19.4062 5.44182 19.4062H2.43835C1.9073 19.4062 1.39801 19.1955 1.0225 18.8205C0.646993 18.4454 0.436035 17.9367 0.436035 17.4062V10.4062C0.436035 4.88325 4.91822 0.40625 10.4476 0.40625C15.977 0.40625 20.4592 4.88325 20.4592 10.4062V17.4062C20.4592 17.9367 20.2482 18.4454 19.8727 18.8205C19.4972 19.1955 18.9879 19.4062 18.4569 19.4062H15.4534C14.9224 19.4062 14.4131 19.1955 14.0375 18.8205C13.662 18.4454 13.4511 17.9367 13.4511 17.4062V12.4062C13.4511 11.8758 13.662 11.3671 14.0375 10.992C14.4131 10.617 14.9224 10.4062 15.4534 10.4062H18.4569C18.4569 8.28452 17.613 6.24969 16.111 4.7494C14.609 3.2491 12.5718 2.40625 10.4476 2.40625ZM2.43835 12.4062V17.4062H5.44182V12.4062H2.43835ZM15.4534 12.4062V17.4062H18.4569V12.4062H15.4534Z"
+                  fill="#666666"
+                />
+              </svg>
+              <p class="leading-[27.2px]">08231959089 <br />08231999122</p>
+            </li>
+            <li class="flex gap-5 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M0.679316 6.26073L9.93702 0.716728C10.0926 0.623477 10.2707 0.574219 10.4521 0.574219C10.6336 0.574219 10.8116 0.623477 10.9672 0.716728L20.2159 6.26173C20.2901 6.30614 20.3515 6.36901 20.3942 6.44419C20.4368 6.51938 20.4592 6.60432 20.4592 6.69073V19.4067C20.4592 19.6719 20.3537 19.9263 20.166 20.1138C19.9782 20.3014 19.7236 20.4067 19.458 20.4067H1.43719C1.17167 20.4067 0.917021 20.3014 0.729267 20.1138C0.541514 19.9263 0.436035 19.6719 0.436035 19.4067V6.68973C0.436017 6.60332 0.458419 6.51838 0.501056 6.44319C0.543693 6.36801 0.605109 6.30514 0.679316 6.26073ZM2.43835 7.53973V18.4067H18.4569V7.53873L10.4516 2.73873L2.43835 7.53873V7.53973ZM10.5077 13.1047L15.8098 8.64173L17.0993 10.1717L10.5217 15.7087L3.80393 10.1787L5.0774 8.63473L10.5077 13.1047Z"
+                  fill="#666666"
+                />
+              </svg>
+              <p class="leading-[27.2px] whitespace-nowrap">
+                pasamandev@gmail.com <br />
+                adminsatu@pasamandev.com
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
