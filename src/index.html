@@ -467,94 +467,137 @@
         >
           Our Galery
         </h2>
-        <swiper-container
-          class="mySwiper"
-          effect="coverflow"
-          grab-cursor="true"
-          centered-slides="true"
-          slides-per-view="3"
-          loop="true"
-          coverflow-effect-rotate="0"
-          coverflow-effect-depth="100"
-          coverflow-effect-modifier="5"
-          navigation="true"
-        >
-          <swiper-slide>
-            <div
-              class="w-[438.144px] h-[374.227px] overflow-hidden border p-7 bg-white rounded-[10px]"
-            >
-              <img
-                class="object-cover object-center w-[500px] h-[500px]"
-                src="../images/slider/slide-1.png"
-                alt=""
-              />
-              <p class="mt-6">
-                Aktivitas Magang dari Universitas dan siswa dari beberapa
-                Sekolah
-              </p>
+
+        <div id="gallery-slider" class="relative">
+          <div
+            class="flex justify-between absolute right-0 left-0 z-10 top-2/4"
+          >
+            <div class="bg-white py-6 px-8 rounded-full shadow-lg button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="28"
+                viewBox="0 0 16 28"
+                fill="none"
+              >
+                <path
+                  d="M14 26L2 14L14 2"
+                  stroke="#363853"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div
-              class="w-[438.144px] h-[374.227px] overflow-hidden border p-7 bg-white rounded-[10px]"
-            >
-              <img
-                class="object-cover object-center w-[500px] h-[500px]"
-                src="../images/slider/slide-2.png"
-                alt=""
-              />
-              <p class="mt-6">
-                Aktivitas Magang dari Universitas dan siswa dari beberapa
-                Sekolah
-              </p>
+            <div class="bg-white py-6 px-8 rounded-full shadow-lg button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="28"
+                viewBox="0 0 16 28"
+                fill="none"
+              >
+                <path
+                  d="M2 26L14 14L2 2"
+                  stroke="#363853"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div
-              class="w-[438.144px] h-[374.227px] overflow-hidden border p-7 bg-white rounded-[10px]"
-            >
-              <img
-                class="object-cover object-center w-[500px] h-[500px]"
-                src="../images/slider/slide-3.png"
-                alt=""
-              />
-              <p class="mt-6">
-                Aktivitas Magang dari Universitas dan siswa dari beberapa
-                Sekolah
-              </p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div
-              class="w-[438.144px] h-[374.227px] overflow-hidden border p-7 bg-white rounded-[10px]"
-            >
-              <img
-                class="object-cover object-center w-[500px] h-[500px]"
-                src="../images/slider/slide-4.png"
-                alt=""
-              />
-              <p class="mt-6">
-                Aktivitas Magang dari Universitas dan siswa dari beberapa
-                Sekolah
-              </p>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div
-              class="w-[438.144px] h-[374.227px] overflow-hidden border p-7 bg-white rounded-[10px]"
-            >
-              <img
-                class="object-cover object-center w-[500px] h-[500px]"
-                src="../images/slider/slide-5.png"
-                alt=""
-              />
-              <p class="mt-6">
-                Aktivitas Magang dari Universitas dan siswa dari beberapa
-                Sekolah
-              </p>
-            </div>
-          </swiper-slide>
-        </swiper-container>
+          </div>
+          <swiper-container
+            class="mySwiper"
+            effect="coverflow"
+            grab-cursor="true"
+            centered-slides="true"
+            slides-per-view="3"
+            loop="true"
+            coverflow-effect-rotate="0"
+            coverflow-effect-depth="100"
+            coverflow-effect-modifier="5"
+            navigation="true"
+            navigation-next-el=".button-next"
+            navigation-prev-el=".button-prev"
+          >
+            <swiper-slide>
+              <div class="__slider-gallery-card">
+                <div class="w-full h-[calc(100%-50px)] border overflow-hidden">
+                  <img
+                    class="object-cover object-center w-full max-h-[300px]"
+                    src="../images/slider/slide-1.png"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-6">
+                  Aktivitas Magang dari Universitas dan siswa dari beberapa
+                  Sekolah
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="__slider-gallery-card">
+                <div class="w-full h-[calc(100%-50px)] border overflow-hidden">
+                  <img
+                    class="object-cover object-center w-full max-h-[300px]"
+                    src="../images/slider/slide-2.png"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-6">
+                  Aktivitas Magang dari Universitas dan siswa dari beberapa
+                  Sekolah
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="__slider-gallery-card">
+                <div class="w-full h-[calc(100%-50px)] border overflow-hidden">
+                  <img
+                    class="object-cover object-center w-full max-h-[300px]"
+                    src="../images/slider/slide-3.png"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-6">
+                  Aktivitas Magang dari Universitas dan siswa dari beberapa
+                  Sekolah
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="__slider-gallery-card">
+                <div class="w-full h-[calc(100%-50px)] border overflow-hidden">
+                  <img
+                    class="object-cover object-center w-full max-h-[300px]"
+                    src="../images/slider/slide-4.png"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-6">
+                  Aktivitas Magang dari Universitas dan siswa dari beberapa
+                  Sekolah
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="__slider-gallery-card">
+                <div class="w-full h-[calc(100%-50px)] border overflow-hidden">
+                  <img
+                    class="object-cover object-center w-full max-h-[300px]"
+                    src="../images/slider/slide-5.png"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-6">
+                  Aktivitas Magang dari Universitas dan siswa dari beberapa
+                  Sekolah
+                </p>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
       </section>
       <section id="contact" class="py-36 px-5 lg:px-[120px] bg-[#F8F8F8]">
         <h2
