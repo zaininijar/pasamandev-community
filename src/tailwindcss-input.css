@@ -122,7 +122,15 @@ body {
   }
 }
 
-.swiper-slide-active {
-  width: 438.144px;
-  height: 374.227px;
+.mySwiper {
+  height: 100%;
+  width: 100%;
+  --swiper-navigation-color: black;
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+}
+
+div > div.swiper-button-next {
+  background-color: black !important;
 }
