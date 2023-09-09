@@ -37,6 +37,9 @@
   .__slider-gallery-card {
     @apply w-[438.144px] shadow-md min-h-[374.227px] border p-7 bg-white rounded-[10px];
   }
+  .__slider-gallery-card-mobile {
+    @apply w-full shadow-md min-h-[374.227px] border p-5 bg-white rounded-[10px];
+  }
 }
 
 .__main-navbar-scroll-gradient {
