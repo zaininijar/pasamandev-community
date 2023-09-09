@@ -158,40 +158,40 @@
           </div>
           <div class="mt-auto">
             <p class="my-4 text-xs text-center text-gray-400">
-              <span>Copyright © 2021</span>
+              <span>Copyright © 2023 Pasamandev Community</span>
             </p>
           </div>
         </nav>
       </div>
     </header>
-    <main class="mt-24">
+    <main class="md:mt-24">
       <section
         id="home"
         class="py-36 px-5 lg:px-[120px] bg-[url(../images/home-bg.png)] bg-cover bg-no-repeat bg-center"
       >
         <div class="flex">
-          <div class="w-[60%]">
+          <div class="w-full md:w-[60%]">
             <h3
               class="text-[14px] font-semibold leading-4 uppercase tracking-[3px] text-[#0B2238]"
             >
               PasamanDev
             </h3>
             <h1
-              class="text-[64px] font-extrabold leading-[72px] tracking-[-1px] text-[#222] mt-7 whitespace-nowrap"
+              class="text-[56px] lg:text-[64px] font-extrabold leading-[72px] tracking-[-1px] text-[#222] mt-7 lg:text-left lg:whitespace-nowrap"
             >
               Pasaman Developer <br />
               Community
             </h1>
             <p
-              class="text-[18px] font-normal leading-7 text-[#475766] mt-5 w-2/3"
+              class="text-[18px] font-normal leading-7 text-[#475766] mt-5 w-full md:w-2/3"
             >
               PasamanDev merupakan komunitas IT yang membantu meningkatkan dan
               memanfaatkan potensi pegiat Teknologi khususnya di Pasaman dalam
               bidang Teknologi.
             </p>
-            <div class="my-10">
+            <div class="my-10 w-full flex">
               <a
-                class="px-24 py-4 bg-[#378375] text-white rounded-[10px] w-auto"
+                class="md:px-24 py-4 bg-[#378375] text-white rounded-[10px] text-center w-full"
                 href="#"
                 >Bergabung Dengan Kami</a
               >
@@ -276,14 +276,14 @@
           Tentang Kami
         </h2>
         <div class="flex mt-32 gap-10">
-          <div class="w-1/2 flex items-center">
+          <div class="w-1/2 items-center hidden md:flex">
             <img
               class="object-contain object-center w-[500px]"
               src="../images/illutration-1.png"
               alt=""
             />
           </div>
-          <div class="w-1/2">
+          <div class="w-full md:w-1/2">
             <h3
               class="text-[14px] font-semibold leading-4 py-[18px] uppercase tracking-[3px] text-[#0B2238] relative"
             >
@@ -350,7 +350,7 @@
         >
           Layanan
         </h2>
-        <div class="flex mt-[81px] gap-[10%]">
+        <div class="flex flex-wrap gap-y-8 mt-[81px] gap-[10%]">
           <div class="__card-service">
             <img class="mx-auto" src="../images/Scene Whiteboard.svg" alt="" />
             <div class="flex mb-8 mt-12">
@@ -472,7 +472,7 @@
           <div
             class="flex justify-between absolute right-0 left-0 z-10 top-2/4"
           >
-            <div class="bg-white py-6 px-8 rounded-full shadow-lg button-next">
+            <div class="bg-white py-6 px-8 rounded-full shadow-lg button-prev">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -489,7 +489,7 @@
                 />
               </svg>
             </div>
-            <div class="bg-white py-6 px-8 rounded-full shadow-lg button-prev">
+            <div class="bg-white py-6 px-8 rounded-full shadow-lg button-next">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -516,7 +516,7 @@
             loop="true"
             coverflow-effect-rotate="0"
             coverflow-effect-depth="100"
-            coverflow-effect-modifier="5"
+            coverflow-effect-modifier="6"
             navigation="true"
             navigation-next-el=".button-next"
             navigation-prev-el=".button-prev"
@@ -531,8 +531,7 @@
                   />
                 </div>
                 <p class="mt-6">
-                  Aktivitas Magang dari Universitas dan siswa dari beberapa
-                  Sekolah
+                  Peninjauan Project Digitalisasi Museum Tuanku Imam Bonjol
                 </p>
               </div>
             </swiper-slide>
@@ -546,8 +545,7 @@
                   />
                 </div>
                 <p class="mt-6">
-                  Aktivitas Magang dari Universitas dan siswa dari beberapa
-                  Sekolah
+                  Penerimaan Magang Dari Guru SMKN 1 Lubuk Sikaping
                 </p>
               </div>
             </swiper-slide>
@@ -601,21 +599,21 @@
       </section>
       <section id="contact" class="py-36 px-5 lg:px-[120px] bg-[#F8F8F8]">
         <h2
-          class="text-[#378375] text-[24px] leading-8 p-[10px] border-b border-[#378375] text-center max-w-max font-extrabold mx-auto"
+          class="text-[#378375] text-[24px] leading-8 py-[10px] border-b border-[#378375] text-center max-w-max font-extrabold mx-auto"
         >
           Gabung Bersama Kami
         </h2>
         <div class="flex mt-11 gap-10">
-          <div class="w-1/2">
+          <div class="md:w-1/2 w-full">
             <h1
-              class="text-[42px] font-bold leading-[48px] tracking-[-0.4px] text-[#1E0E62] mt-[57px]"
+              class="text-[36px] md:text-[42px] font-bold leading-[36px] md:leading-[48px] tracking-[-0.4px] text-[#1E0E62] mt-[57px]"
             >
               Daftar untuk bergabung bersama komunitas
             </h1>
             <form
               action=""
               method="post"
-              class="flex flex-col gap-[35px] mt-16"
+              class="flex flex-col gap-[24px] md:gap-[35px] mt-8 md:mt-16"
             >
               <div class="flex flex-col">
                 <label for="name" class="__form-label">name</label>
@@ -642,19 +640,21 @@
                 />
               </div>
             </form>
-            <div class="mt-14 flex gap-5 items-center">
+            <div class="mt-14 flex flex-wrap gap-5 items-center">
               <a
-                class="w-1/2 py-[15px] bg-[#378375] text-white rounded-[10px] text-center"
+                class="md:w-1/2 w-full py-[15px] bg-[#378375] text-white rounded-[10px] text-center"
                 href="#"
               >
                 Gabung
               </a>
-              <p class="text-[#15143966] text-[16px] font-normal w-2/3">
+              <p
+                class="text-[#15143966] text-[16px] font-normal md:w-2/3 w-full"
+              >
                 Dengan gabung kamu menyetujui syarat dan ketentuan yang berlaku
               </p>
             </div>
           </div>
-          <div class="w-1/2 flex items-center justify-end">
+          <div class="w-1/2 md:flex items-center justify-end hidden">
             <img
               class="object-contain object-center w-[521.939px]"
               src="../images/illustration-2.png"
