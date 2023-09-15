@@ -51,9 +51,17 @@ document.addEventListener("scroll", () => {
   navbarScrollInit();
 });
 
+let currentNav = document.getElementById(`nav-link-home`);
+
 function scrollToElement(elementId) {
+  removeCurrentNav(currentNav);
+
   var elem = document.getElementById(elementId);
-  if (elem) {
+  var navElem = document.getElementById(`nav-link-${elementId}`);
+
+  currentNav = navElem;
+
+  if (elem && navElem) {
     var elemRect = elem.getBoundingClientRect();
     var scrollYValue = window.scrollY + elemRect.top - 100;
 
@@ -66,7 +74,18 @@ function scrollToElement(elementId) {
     window.scrollTo({
       top: scrollYValue,
     });
+
+    navElem.classList.add("__navlink-text-active");
+    navElem.classList.remove("__navlink-text");
   }
+}
+
+function removeCurrentNav(current) {
+  current.classList.remove("__navlink-text-active");
+  current.classList.add("__navlink-text");
+  console.log("====================================");
+  console.log(current);
+  console.log("====================================");
 }
 
 function initLoader() {

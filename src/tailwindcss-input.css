@@ -8,10 +8,10 @@
 
 @layer components {
   .__navlink-text {
-    @apply text-black text-[16px] font-normal p-[10px]  leading-6 uppercase hover:text-gray-800;
+    @apply text-black transition-all duration-300 text-[16px] font-normal p-[10px]  leading-6 uppercase hover:text-gray-800;
   }
   .__navlink-text-active {
-    @apply text-[#378375] text-[16px] font-bold p-[10px] border-b border-[#378375] leading-6 uppercase hover:text-teal-800;
+    @apply text-[#378375] transition-all duration-300 text-[16px] font-bold p-[10px] border-b border-[#378375] leading-6 uppercase hover:text-teal-800;
   }
   .__card-service {
     @apply border bg-white px-[28px] py-[44px] drop-shadow-md;
